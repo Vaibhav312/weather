@@ -49,7 +49,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -65,12 +65,8 @@
       
       <style>
           body{
-            background-image: url("default.jpeg");
-               max-width: 100%;
-              height: auto; 
-              background-size: cover;
-              background-repeat: no-repeat;
-              font-family: 'Balsamiq Sans', cursive;
+            background: url(default.jpeg) no-repeat center center fixed;
+                         font-family: 'Balsamiq Sans', cursive;
           }
           .container{
               text-align: center;
@@ -96,6 +92,16 @@
             
                     font-family: 'Balsamiq Sans', cursive;
           }
+          h1 {
+            color:white;
+            text-shadow: 2px 2px black;
+          }
+          #city_text{
+            color:white;
+            text-shadow: 2px 2px black;
+          }
+        
+
          
           
       
@@ -106,7 +112,7 @@
        <h1>What's the weather ?</h1>
        <form>
         <fieldset class="form-group">
-           <label for="city">Enter the city</label>
+           <label for="city" id="city_text">Enter the city</label>
             <input type="text" class="form-control" name="city" id="city" placeholder="Gurgaon,etc.">
             <button type="submit" class="btn btn-primary">Submit</button>
            </fieldset>
@@ -144,38 +150,65 @@
     {
       
       $('body').css('background-image', 'url("images/mist.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("13d"== <?php echo json_encode($x); ?> || "13n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/snow.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("11d"== <?php echo json_encode($x); ?> || "11n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/thunderstorm.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("10d"== <?php echo json_encode($x); ?> || "10n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/rain.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("09d"== <?php echo json_encode($x); ?> || "09n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/shower rain.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("04d"== <?php echo json_encode($x); ?> || "04n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/broken clouds.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("03d"== <?php echo json_encode($x); ?> || "03n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/scattered clouds.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("02d"== <?php echo json_encode($x); ?> || "02n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/few clouds.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     else if("01d"== <?php echo json_encode($x); ?> || "01n"== <?php echo json_encode($x); ?>)
     {
       $('body').css('background-image', 'url("images/clear sky.jpg")');
+      $('body').css('background-position','center');
+      $('body').css('background-repeat','no-repeat');
+      $('body').css('background-size','cover');
     }
     
       
